@@ -19,15 +19,15 @@ WHERE MiddleInitial is null;
 SELECT DISTINCT price FROM products;
 -- find all employees whose first name starts with the letter ‘j’
 SELECT * FROM employees
-WHERE first_name LIKE 'J%';
+WHERE FirstName LIKE 'J%';
 -- find all Macbooks
 SELECT * FROM products
-WHERE product_name LIKE '%Macbook%';
+WHERE ProductName LIKE '%Macbook%';
 -- find all products that are on sale
 SELECT * FROM products
-WHERE on_sale = 1;
+WHERE OnSale = 1;
 -- find the average price of all products
-SELECT AVG(price) AS average_price
+SELECT AVG(price) AS AveragePrice
 FROM products;
 -- find all Geek Squad employees who don't have a middle initial
 SELECT * FROM employees
